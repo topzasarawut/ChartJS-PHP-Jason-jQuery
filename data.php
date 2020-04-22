@@ -2,7 +2,7 @@
 <?php 
     header('Content-Type: application/json');
 
-    require_once 'db.php';
+    require_once 'connect.php';
 
     $sqlQuery = "SELECT * FROM student ORDER BY id";
     $result = mysqli_query($conn, $sqlQuery);
